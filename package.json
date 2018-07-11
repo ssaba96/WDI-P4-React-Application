@@ -5,6 +5,7 @@
   "scripts": {
     "start:client": "webpack-dev-server",
     "start:server": "nodemon",
+    "seed": "node db/seeds",
     "test:client": "nyc mocha test/client/**/*_spec.js --require test/client/helper --recursive --exit",
     "test:server": "nyc mocha test/server/**/*_spec.js --require test/server/helper --recursive --exit",
     "build": "webpack -p",
@@ -32,6 +33,7 @@
     "node-sass": "^4.7.2",
     "nyc": "^11.6.0",
     "sass-loader": "^6.0.6",
+    "sinon": "^6.1.2",
     "style-loader": "^0.20.2",
     "supertest": "^3.0.0",
     "url-loader": "^0.6.2",
@@ -39,9 +41,19 @@
     "webpack-dev-server": "^2.11.1"
   },
   "dependencies": {
+    "axios": "^0.18.0",
+    "bcrypt": "^2.0.1",
+    "bluebird": "^3.5.1",
+    "bulma": "^0.7.1",
     "express": "^4.16.3",
+    "jsonwebtoken": "^8.3.0",
+    "lodash": "^4.17.10",
+    "moment": "^2.22.2",
+    "mongoose": "^5.2.0",
     "react": "^16.3.1",
-    "react-dom": "^16.3.1"
+    "react-dom": "^16.3.1",
+    "react-router-dom": "^4.3.1",
+    "react-select": "^1.2.1"
   },
   "repository": "git@github.com:ssaba96/WDI-P4-React-Application.git"
 }
