@@ -39,7 +39,9 @@
     "webpack-dev-server": "^2.11.1"
   },
   "dependencies": {
+    "express": "^4.16.3",
     "react": "^16.3.1",
     "react-dom": "^16.3.1"
-  }
+  },
+  "repository": "git@github.com:ssaba96/WDI-P4-React-Application.git"
 }
