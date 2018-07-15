@@ -50,11 +50,18 @@
     "lodash": "^4.17.10",
     "moment": "^2.22.2",
     "mongoose": "^5.2.0",
+    "nuka-carousel": "^4.2.5",
     "pure-react-carousel": "^1.13.2",
     "react": "^16.3.1",
+    "react-alice-carousel": "^1.10.3",
+    "react-carousel": "^4.3.0",
     "react-dom": "^16.3.1",
+    "react-image-show": "^0.2.4",
+    "react-responsive-carousel": "^3.1.41",
     "react-router-dom": "^4.3.1",
-    "react-select": "^1.2.1"
+    "react-select": "^1.2.1",
+    "react-slick": "^0.23.1",
+    "slick-carousel": "^1.8.1"
   },
   "repository": "git@github.com:ssaba96/WDI-P4-React-Application.git"
 }

@@ -4,6 +4,7 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Home from './components/pages/Home';
 import AuthLogin from './components/auth/Login';
 import AuthRegister from './components/auth/Register';
+import Navbar from './components/common/Navbar';
 
 
 import 'bulma';
@@ -15,13 +16,15 @@ class App extends React.Component {
     return (
       <BrowserRouter>
         <main>
+          <Navbar />
           <h1>Wicked Talent</h1>
+          <Route exact path='/' component={Home} />
           <section className="section">
             <div className="container">
               <Switch>
                 <Route path="/login" component={AuthLogin} />
                 <Route path="/register" component={AuthRegister} />
-                <Route path="/" component={Home} />
+                {/* <Route path="/" component={Home} /> */}
               </Switch>
             </div>
           </section>

@@ -1,5 +1,6 @@
 import React from 'react';
 import axios from 'axios';
+import Auth from '../../lib/Auth';
 class AuthRegister extends React.Component {
 
   state= {}
@@ -10,7 +11,14 @@ class AuthRegister extends React.Component {
       url: '/api/register',
       method: 'POST',
       data: this.state
-    });
+    })
+      .then(res => {
+        Auth.setToken(res.data.token);
+        this.props.history.push('/talents');
+      });
+  }
+  handleChange = ({ target: { name, value }}) => {
+    this.setState({ [name]: value });
   }
 
   render() {
