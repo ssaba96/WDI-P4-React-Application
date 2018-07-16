@@ -2,14 +2,12 @@ const Talent = require('../models/talent');
 
 function indexRoute(req, res, next) {
   Talent.find()
-    .populate('knownAssociates')
     .then(talents => res.json(talents))
     .catch(next);
 }
 
 function showRoute(req, res, next) {
   Talent.findById(req.params.id)
-    .populate('knownAssociates')
     .then(talent => res.json(talent))
     .catch(next);
 }

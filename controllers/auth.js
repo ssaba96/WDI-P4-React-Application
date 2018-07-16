@@ -16,8 +16,7 @@ function login(req, res, next) {
       }
 
       const token = jwt.sign({ sub: user._id }, secret, { expiresIn: '6h' });
-      // ({ sub: user._id } this is known as payload, sub means subject(the user)
-      //secret is used to encrypt
+      
       res.json({
         user,
         token,

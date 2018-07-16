@@ -5,6 +5,7 @@ import Home from './components/pages/Home';
 import AuthLogin from './components/auth/Login';
 import AuthRegister from './components/auth/Register';
 import Navbar from './components/common/Navbar';
+import FlashMessages from './components/common/FlashMessages';
 
 
 import 'bulma';
@@ -17,6 +18,7 @@ class App extends React.Component {
       <BrowserRouter>
         <main>
           <Navbar />
+          <FlashMessages/>
           <h1>Wicked Talent</h1>
           <Route exact path='/' component={Home} />
           <section className="section">

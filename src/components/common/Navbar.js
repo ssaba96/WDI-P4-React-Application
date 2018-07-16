@@ -1,5 +1,7 @@
 import React from 'react';
 import { Link, withRouter } from 'react-router-dom';
+import Auth from '../../lib/Auth';
+
 class Navbar extends React.Component {
 
   state = {
@@ -14,6 +16,11 @@ class Navbar extends React.Component {
     if(prevProps.location.pathname !== this.props.location.pathname) {
       this.setState({ navbarOpen: false });
     }
+  }
+
+  logout = () => {
+    Auth.logout();
+    this.props.history.push('/');
   }
 
   render() {
@@ -35,9 +42,11 @@ class Navbar extends React.Component {
         <div className={`navbar-menu${this.state.navbarOpen ? ' is-active' : ''}`}>
           <div className="navbar-end">
             <Link to="/" className="navbar-item">Home</Link>
-            <Link to="/login" className="navbar-item">Login</Link>
-            <Link to="/register" className="navbar-item">Register</Link>
-            <a onClick={this.logout} className="navbar-item">Logout</a>
+            <Link to="/talents" className="navbar-item">Talents</Link>
+            {Auth.isAuthenticated() && <Link to="/talents/new" className="navbar-item">New talents</Link>}
+            {!Auth.isAuthenticated() && <Link to="/register" className="navbar-item">Register</Link>}
+            {!Auth.isAuthenticated() && <Link to="/login" className="navbar-item">Login</Link>}
+            {Auth.isAuthenticated() && <a onClick={this.logout} className="navbar-item">Logout</a>}
           </div>
         </div>
       </nav>

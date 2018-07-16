@@ -1,6 +1,7 @@
 import React from 'react';
 import axios from 'axios';
 import Auth from '../../lib/Auth';
+
 class AuthRegister extends React.Component {
 
   state= {}
@@ -17,6 +18,7 @@ class AuthRegister extends React.Component {
         this.props.history.push('/talents');
       });
   }
+  
   handleChange = ({ target: { name, value }}) => {
     this.setState({ [name]: value });
   }

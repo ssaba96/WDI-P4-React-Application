@@ -1,4 +1,4 @@
-class Auth { //it's just JS so no class extend needed
+class Auth {
 
   static logout() {
     localStorage.removeItem('token');
@@ -19,6 +19,7 @@ class Auth { //it's just JS so no class extend needed
     if(parts.length !== 3) return null;
     return JSON.parse(atob(parts[1]));
   }
+  
   static isAuthenticated() {
     const payload = this.getPayload();
     if(!payload || !payload.exp) return false;
