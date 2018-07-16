@@ -1,18 +1,19 @@
 const router = require('express').Router();
-const talent = require('../controllers/talent');
+const talents = require('../controllers/talents');
 const auth = require('../controllers/auth');
-const secureRoute = require('../lib/secureRoute');
+const secureRoute = require('../lib/secureroute');
 
-router.route('/talent')
-  .get(talent.index)
-  .post(secureRoute, talent.create);
+router.route('/talents')
+  .get(talents.index)
+  .post(secureRoute, talents.create);
 
-router.route('/talent/:id')
-  .get(talent.show)
-  .put(secureRoute, talent.update)
-  .delete(secureRoute, talent.delete);
+router.route('/talents/:id')
+  .get(talents.show)
+  .put(secureRoute, talents.update)
+  .delete(secureRoute, talents.delete);
 
 router.post('/register', auth.register);
 router.post('/login', auth.login);
+
 
 module.exports = router;

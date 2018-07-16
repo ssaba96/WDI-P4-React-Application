@@ -18,7 +18,7 @@ class AuthRegister extends React.Component {
         this.props.history.push('/talents');
       });
   }
-  
+
   handleChange = ({ target: { name, value }}) => {
     this.setState({ [name]: value });
   }
