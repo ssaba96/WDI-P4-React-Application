@@ -30,7 +30,6 @@ class TalentsShow extends React.Component {
           <div className="column is-5">
             <h2 className="title">{this.state.talent.name}</h2>
             <hr />
-            <p className="">{this.state.talent.description}</p>
             <hr />
             <figure className="image">
               <img src={this.state.talent.image} id="front-image"/>
@@ -39,6 +38,15 @@ class TalentsShow extends React.Component {
         </div>
         <div className="column is-4">
           <div className="card profile-card">
+            <h4 className="title">Description</h4>
+            <p className="">{this.state.talent.description}</p>
+            <hr />
+            <h4 className="title">Skills</h4>
+            <p className="">{this.state.talent.skills}</p>
+            <hr />
+            <h4 className="title">Education</h4>
+            <p className="">{this.state.talent.education}</p>
+            <hr />
           </div>
         </div>
       </div>
