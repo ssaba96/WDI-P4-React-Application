@@ -1,9 +1,10 @@
 const mongoose = require('mongoose');
 
 const talentSchema = new mongoose.Schema({
-  name: { type: String, required: 'This field is required' },
+  name: String,
   description: String ,
-  image: { type: String, required: 'This field is required' }
+  image: String,
+  myWickedTalent: String
 });
 
 
