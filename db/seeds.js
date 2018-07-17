@@ -1,12 +1,18 @@
 const mongoose = require('mongoose');
 mongoose.Promise = require('bluebird');
-
+const User = require('../models/user');
 const { dbURI } = require('../config/environment');
 
 const Talent = require('../models/talent');
 
 mongoose.connect(dbURI, (err, db) => {
-  db.dropDatabase()
+  db.dropDatabase();
+  User.create([{
+    username: 'chavez',
+    email: 'chavez@test.com',
+    password: 'password',
+    passwordConfirmation: 'password'
+  }])
     .then(() => Talent.create([{
       name: 'blog',
       description: 'I will..',
