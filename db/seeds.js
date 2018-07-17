@@ -9,9 +9,9 @@ mongoose.connect(dbURI, (err, db) => {
   db.dropDatabase();
   User.create([{
     username: 'chavez',
-    email: 'chavez@test.com',
-    password: 'password',
-    passwordConfirmation: 'password'
+    email: 'sabziamjad@gmail.com',
+    password: 'pass',
+    passwordConfirmation: 'pass'
   }])
     .then(() => Talent.create([{
       name: 'blog',
