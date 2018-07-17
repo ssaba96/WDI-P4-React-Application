@@ -60,17 +60,19 @@ class TalentsIndex extends React.Component {
 
         <div className="columns is-multiline">
           {this.sortAndFilteredTalents().map(talent =>
-            <div key={talent._id} className="column is-2-desktop is-half-tablet">
+            <div key={talent._id} className="column is-2-desktop">
               <Link to={`/talents/${talent._id}`}>
                 <div className="card">
                   <div className="card-image">
                     <figure className="image is-square">
                       <img src={talent.image} />
                     </figure>
+                    <p className="">{talent.name}</p>
+                    <hr />
+                    <p className="">{talent.description}</p>
                   </div>
                   <div className="card-content">
                     <div className="content">
-                      <h2 className="title">{talent.name}</h2>
                     </div>
                   </div>
                 </div>
