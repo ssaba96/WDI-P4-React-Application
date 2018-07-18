@@ -6,7 +6,9 @@ const talentSchema = new mongoose.Schema({
   skills: String,
   education: String,
   image: String,
-  myWickedTalent: String
+  myWickedTalent: String,
+  basedIn: String,
+  rating: Number
 });
 
 

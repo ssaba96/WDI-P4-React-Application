@@ -1,11 +1,15 @@
-body{
+.title{
+  font-family: 'Indie Flower', cursive;
+}
+
+.section{
   background-color: aliceblue;
 }
 
 .home-slide-images{
   height: 900px;
   width: 1275px;
-  padding-left: 5px;
+  padding-left: 125px;
   padding-top: 10px;
 }
 
@@ -15,9 +19,9 @@ h1{
 
 .card{
   width: 700px;
-  height: 435px;
+  height: 630px;
   margin-left: 10px;
-  background-color: teal;
+  background-color: white;
 }
 
 .profile-card{
@@ -25,6 +29,8 @@ h1{
   height: 900px;
 }
 
-#dfront-image{
-  background-size: auto;
+.image img {
+    display: block;
+    height: 400px;
+    width: 900px;
 }

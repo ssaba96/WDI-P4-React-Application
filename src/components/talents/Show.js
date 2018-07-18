@@ -25,31 +25,60 @@ class TalentsShow extends React.Component {
 
   render() {
     return (
-      <div className="columns">
-        <div className="card">
+      <section>
+        <div className="columns is mulitline">
+          <div className="card">
+            <div className="column is-12">
+              <h2 className="title">{this.state.talent.name}</h2>
+              <hr />
+              <figure className="image">
+                <img src={this.state.talent.image} id="front-image"/>
+              </figure>
+              <strong><h4 className="">Rating</h4></strong>
+              <h2 className="title">{this.state.talent.rating}</h2>
+              <strong><h4 className="">Based In</h4></strong>
+              <p className="">{this.state.talent.basedIn}</p>
+              <hr />
+              <div className="card">
+                <p className="title">Comments</p>
+                <p className="title is-6">Rating</p>
+              </div>
+            </div>
+          </div>
+          {/* <div className="card">
+          <label className="label">Rating</label>
+          <div className="control">
+            <select name="rating">
+              <option value="" disabled>Please Rate</option>
+              <option value="">Rating</option>
+              <option value="1">⭐️</option>
+              <option value="2">⭐️⭐️</option>
+              <option value="3">⭐️⭐️⭐️</option>
+              <option value="4">⭐️⭐️⭐️⭐️</option>
+              <option value="5">⭐️⭐️⭐️⭐️⭐️</option>
+            </select>
+          </div>
+        </div> */}
           <div className="column is-5">
-            <h2 className="title">{this.state.talent.name}</h2>
+            <div className="card">
+              <h4 className="title">Description</h4>
+              <p className="">{this.state.talent.description}</p>
+              <hr />
+              <h4 className="title">Skills</h4>
+              <p className="">{this.state.talent.skills}</p>
+              <hr />
+              <h4 className="title">Education</h4>
+              <p className="">{this.state.talent.education}</p>
+            </div>
             <hr />
-            <hr />
-            <figure className="image">
-              <img src={this.state.talent.image} id="front-image"/>
-            </figure>
-          </div>
-        </div>
-        <div className="column is-4">
-          <div className="card profile-card">
-            <h4 className="title">Description</h4>
-            <p className="">{this.state.talent.description}</p>
-            <hr />
-            <h4 className="title">Skills</h4>
-            <p className="">{this.state.talent.skills}</p>
-            <hr />
-            <h4 className="title">Education</h4>
-            <p className="">{this.state.talent.education}</p>
+            <div className="card portfolio">
+              <p className="title">Portfolio</p>
+              <a>links</a>
+            </div>
             <hr />
           </div>
         </div>
-      </div>
+      </section>
     );
   }
 }
