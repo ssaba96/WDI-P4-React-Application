@@ -16,7 +16,7 @@ class TalentsEdit extends React.Component {
 
   componentDidMount() {
     axios({
-      url: `/api/items/${this.props.match.params.id}`,
+      url: `/api/talents/${this.props.match.params.id}`,
       method: 'GET'
     })
       .then(res => {
@@ -28,12 +28,12 @@ class TalentsEdit extends React.Component {
   handleSubmit = (e) => {
     e.preventDefault();
     axios({
-      url: `/api/items/${this.props.match.params.id}`,
+      url: `/api/talents/${this.props.match.params.id}`,
       method: 'PUT',
       data: this.state,
       headers: {Authorization: `Bearer ${Auth.getToken()}`}
     })
-      .then(() => this.props.history.push('/items'))
+      .then(() => this.props.history.push('/talents'))
       .catch(err => this.setState({ errors: err.response.data.errors }));
   }
 

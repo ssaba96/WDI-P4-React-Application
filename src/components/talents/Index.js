@@ -67,7 +67,7 @@ class TalentsIndex extends React.Component {
                     <figure className="image is-square">
                       <img src={talent.image} />
                     </figure>
-                    <p className="">{talent.name}</p>
+                    <p className="title">{talent.name}</p>
                     <hr />
                     <p className="">{talent.description}</p>
                   </div>

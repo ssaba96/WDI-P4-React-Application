@@ -1,6 +1,7 @@
 import React from 'react';
 import axios from 'axios';
 import Auth from '../../lib/Auth';
+import { Link } from 'react-router-dom';
 
 class TalentsShow extends React.Component {
 
@@ -76,6 +77,7 @@ class TalentsShow extends React.Component {
               <a>links</a>
             </div>
             <hr />
+            <Link className="button is-primary" to={`/talents/${this.state.talent._id}/edit`}>Edit</Link>
           </div>
         </div>
       </section>
