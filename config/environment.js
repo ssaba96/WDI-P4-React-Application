@@ -1,4 +1,4 @@
-const dbURI = 'mongodb://localhost:27017/talents';
+const dbURI = 'mongodb://localhost/talents';
 const port = 4000;
 const secret = '🏴⭐️☺️🎉🔑🗝';
 
