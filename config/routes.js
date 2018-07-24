@@ -1,7 +1,7 @@
 const router = require('express').Router();
 const talents = require('../controllers/talents');
 const auth = require('../controllers/auth');
-const secureRoute = require('../lib/secureroute');
+const secureRoute = require('../lib/secureRoute');
 
 router.route('/talents')
   .get(talents.index)
