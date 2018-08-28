@@ -45,4 +45,55 @@ For this project I have used the following technologies:
 
 ---
 
+### My Project screenshots
+Home Page:
+<img width="1383" alt="1fhome" src="https://i.imgur.com/PZS3uwQ.png">
+
+###### Talent Page: When user clicks on 'Browse Talents' in the navbar, different talent show up.
+<img width="1217" alt="2view" src="https://i.imgur.com/bWteOmi.png">
+
+###### Search Page: The user can browse specific talents by typing in search bar.
+<img width="1217" alt="2categories" src="https://i.imgur.com/SLZIksH.png">
+
+###### Museum Show Page: Once a talent is clicked to view, the user is directed to the login page.
+<img width="1217" alt="3show" src="https://i.imgur.com/YUpeNKc.png">
+
+###### Register Page:  If the user is not already registered, they can do so by clicking 'Register' in the navabar. The user has to fill out all the fields required for signing up.
+<img width="1378" alt="4register" src="https://i.imgur.com/n1T5fM2.png">
+
+
+###### User Comment enabled: The user can then see the information about the specific talent including description, skills, education, portfolio and comments.
+<img width="1218" alt="5comment" src="https://i.imgur.com/WpxNBbN.png">
+
+###### If user has posted this job, they can edit the details. e.g. Name title
+<img width="1218" alt="5user comment" src="https://i.imgur.com/VygC4p3.png">
+
+<img width="1218" alt="5user comment" src="https://i.imgur.com/CF9FUCo.png">
+
+###### User's Profile: After making changes, by clicking submit, the user is re-directed to talents page where they can see the change in name.
+<img width="1218" alt="5profile" src="https://i.imgur.com/LW2SuyF.png">
+
+---
+
+### Challenges and Problems
+
+- It was challenging to implement the sliding carousel on home page images.
+
+- The description was not dispalying on talents page with the image.
+
+---
+
+### Wins
+
+- The user is able to make changes to form once its been posted.
+
+- The search bar filters the talents correctly.
+
+---
+
+### Future Features
+
+Features I would have liked to include:
+
+- I would like google maps to display full address of the museum i.e. postcode.
 
